@@ -1,10 +1,16 @@
 #include <stdio.h>
-/* This program prints a set of string */
+#include <stdlib.h>
+
+/**
+ * main-entry point
+ *
+ *  Return:Always 0 success
+ */
 
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
-		return (0);
-}
-		
+	char my[] = ("\"Programming is like building a multilingual puzzle\n");
 
+	puts(my);
+	return (0);
+}
