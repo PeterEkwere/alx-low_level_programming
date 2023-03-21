@@ -1,21 +1,40 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- * main - check the code.
+ * void -  function takes an integer argument c, and checks if lowercase
  *
- * Return: Always 0.
+ * Return: return 1 if lowercase else 0
  */
-int main(void)
+
+
+
+
+int _isalpha(int c)
 {
-	int r;
-		r = _isalpha('H');
-	_putchar(r + '0');
-	r = _isalpha('o');
-	_putchar(r + '0');
-	r = _isalpha(108);
-	_putchar(r + '0');
-	r = _isalpha(';');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
+	return (_islower(c) || _isupper(c));
+}
+
+int _isupper(int c)
+{
+	
+        if (c >= 'A' && c <= 'Z')
+        {
+                return (1);
+        }
+        else
+        {
+                return (0);
+        }
+}
+
+int _islower(int c)
+{
+        if (c >= 'a' && c <= 'z')
+        {
+                return (1);
+        }
+        else
+        {
+                return (0);
+        }
 }

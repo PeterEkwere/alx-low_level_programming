@@ -1,14 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 /**
- * main - prints a to z in lower case 10 times
+ * void - prints all alphabet in lowercase 10 times
  *
- * Return: return 0
+ * Return: Always 0 success
  */
-
-int main(void)
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
-	return (0);
+        int ch;
+        int i;
+        for (i = 0; i < 10; i++)
+        {
+                for (ch = 'a'; ch <= 'z'; ch++)
+                {
+                        _putchar(ch);
+                }_putchar('\n');
+        }
 }
