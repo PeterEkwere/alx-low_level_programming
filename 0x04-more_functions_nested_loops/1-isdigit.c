@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * isdigit - checks if an input is a digit or not
+ * _isdigit - checks if an input is a digit or not
  *
  * @c: is an integet that will be inputted to check the function
  *
