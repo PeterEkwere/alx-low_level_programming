@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints anumber 1 - 100 if multiple of 3 print fizz 
+ * main - prints a number 1 - 100 if multiple of 3 print fizz
  * if multiple of 5 print buzz
  * if multiple if 3 and 5 print fizzbuzz
  *
@@ -30,5 +30,5 @@ int main(void)
 			printf("%d ", i);
 		}
 	} putchar('\n');
-       	return (0);
+	return (0);
 }
