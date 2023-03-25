@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 #include <limits.h>
 /**
@@ -8,6 +7,8 @@
  *
  * Return: always 0 success
  */
+int _abs(int c);
+
 int print_last_digit(int c)
 {
 	int last_digit;
@@ -24,4 +25,16 @@ int print_last_digit(int c)
                 _putchar(last_digit + '0');
         return (last_digit);
 
+}
+int _abs(int c)
+{
+        if (c < 0)
+        {
+                return (-c);
+        }
+        else
+        {
+                return (c);
+        }
+        return (0);
 }
