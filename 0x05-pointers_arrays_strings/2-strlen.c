@@ -2,7 +2,7 @@
 /**
  * _strlen - this function returns the length of an array
  *
- * @*s: is a pointer to an integer
+ * @s: is a pointer to an integer
  *
  * Return: _strlen
  */
