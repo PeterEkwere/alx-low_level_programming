@@ -6,6 +6,9 @@
  *
  * Return: void
  */
+
+int _strlen(char *s);
+
 void _puts(char *str)
 {
 	int i;
@@ -15,4 +18,14 @@ void _puts(char *str)
 	{
 		_putchar(str[i]);
 	} _putchar('\n');
+}
+int _strlen(char *s)
+{
+        int i = 0;
+
+        while (*s != '\0')
+        {
+                s++;
+                i++;
+        } return (i);
 }
