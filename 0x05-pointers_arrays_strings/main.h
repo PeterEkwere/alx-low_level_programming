@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+void print_rev(char *s);
 void _puts(char *str);
 int _isupper(int c);
 int _isdigit(int c);
