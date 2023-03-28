@@ -8,13 +8,13 @@
  */
 int _strlen(char *s)
 {
-        int i = 0;
+	int i = 0;
 
-        while (*s != '\0')
-        {
-                s++;
-                i++;
-        } return (i);
+	while (*s != '\0')
+	{
+		s++;
+		i++;
+	} return (i);
 }
 /**
  * puts2 - skips the next data item in an array when print to output
@@ -27,9 +27,9 @@ void puts2(char *str)
 	int len = _strlen(str);
 	int i;
 
-	for (i = 0; i < len;i++)
+	for (i = 0; i < len; i++)
 	{
-		if (i%2 != 0)
+		if (i % 2 != 0)
 		{
 			continue;
 		} _putchar(str[i]);
