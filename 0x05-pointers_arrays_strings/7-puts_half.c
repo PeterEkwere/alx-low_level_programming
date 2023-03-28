@@ -8,13 +8,13 @@
  */
 int _strlen(char *s)
 {
-        int i = 0;
+	int i = 0;
 
-        while (*s != '\0')
-        {
-                s++;
-                i++;
-        } return (i);
+	while (*s != '\0')
+	{
+		s++;
+		i++;
+	} return (i);
 }
 /**
  * puts_half - prints the second half of a string
@@ -29,7 +29,7 @@ void puts_half(char *str)
 	int i;
 	int n = (len - 1) / 2;
 
-	if (len%2 != 0)
+		if (len % 2 != 0)
 	{
 			for (i = n; i < len; i++)
 			{
