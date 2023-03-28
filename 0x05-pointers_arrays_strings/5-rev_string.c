@@ -17,7 +17,7 @@ int _strlen(char *c)
 	} return (i);
 }
 /**
- * print_rev - prints string in reverse
+ * rev_string - prints string in reverse
  *
  * @s: is a pointer to an integer
  *
@@ -27,9 +27,13 @@ void rev_string(char *s)
 {
 	int len = _strlen(s);
 	int i;
+	int j;
+	char rev;
 
-	for (i = len; i >= 0; i--)
+	for (i = 0, j = len - 1; i < j; i++, j--)
 	{
-		s[i] = i;	
+		rev = s[i];
+		s[i] = s[j];
+		s[j] = rev;
 	}
 }
