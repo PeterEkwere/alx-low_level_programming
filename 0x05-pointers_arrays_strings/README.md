@@ -1,1 +1,1 @@
-This is a directory contains projects on functins and loops and arrays
+This is a directory contains projects on functions using pointers,loops and arrays
