@@ -27,11 +27,11 @@ void puts_half(char *str)
 	int len = _strlen(str);
 	int halflen = len / 2;
 	int i;
-	int n = (len - 1) / 2;
+	int n = len / 2;
 
 		if (len % 2 != 0)
 	{
-			for (i = n; i < len; i++)
+			for (i = n + 1; i < len; i++)
 			{
 				if (str[i] == '\0')
 					continue;
