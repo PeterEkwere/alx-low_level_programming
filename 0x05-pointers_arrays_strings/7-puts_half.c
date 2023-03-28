@@ -33,6 +33,8 @@ void puts_half(char *str)
 	{
 			for (i = n; i < len; i++)
 			{
+				if (str[i] == '\0')
+					continue;
 				_putchar(str[i]);
 			} _putchar('\n');
 	}
@@ -40,6 +42,8 @@ void puts_half(char *str)
 	{
 		for (i = halflen ; i < len; i++)
 		{
+			if (str[i] == '\0')
+				continue;
 			_putchar(str[i]);
 		} _putchar('\n');
 	}
