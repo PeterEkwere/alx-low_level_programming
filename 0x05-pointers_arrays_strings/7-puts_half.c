@@ -36,10 +36,11 @@ void puts_half(char *str)
 				_putchar(str[i]);
 			} _putchar('\n');
 	}
-
-	for (i = halflen ; i < len; i++)
+	else
 	{
-
-		_putchar(str[i]);
-	} _putchar('\n');
+		for (i = halflen ; i < len; i++)
+		{
+			_putchar(str[i]);
+		} _putchar('\n');
+	}
 }
