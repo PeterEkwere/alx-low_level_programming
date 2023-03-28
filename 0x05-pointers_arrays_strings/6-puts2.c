@@ -29,17 +29,9 @@ void puts2(char *str)
 
 	for (i = 0; i < len;i++)
 	{
-		if (str[i] == 0)
-		{
-			_putchar('0');
-		}
 		if (str[i]%2 != 0)
 		{
 			continue;
-		}
-		else
-		{
-			_putchar(str[i]);
-		}
+		} _putchar(str[i]);
 	} _putchar('\n');
 }
