@@ -26,9 +26,9 @@ char *cap_string(char *j)
 			case '}':
 				if (j[i + 1] >= 'a' && j[i + 1] <= 'z')
 				{
-					j[i + 1] -=32;
+					j[i + 1] -= 32;
 				}
 		} i++;
 	}	while (j[i] != '\0');
-		return j;
+		return (j);
 }
