@@ -11,7 +11,6 @@ This repository contains C programs that includes the following files:
 * `8-print_array.c`
 * `9-strcpy.c`
 * `100-main.c`
-* `100-atoi.c`
 
 ## Requirements
 These programs were written in `C` programming language. To compile and run them you need to have `gcc` compiler installed in your computer.
@@ -60,8 +59,5 @@ This program copies the string pointed to by `src`, including the terminating nu
 
 ### 100-main.c
 This program contains the main function for testing the other programs.
-
-### 100-atoi.c
-This program converts a string to an integer.
 
 ### Credits - Ekwere Peter
