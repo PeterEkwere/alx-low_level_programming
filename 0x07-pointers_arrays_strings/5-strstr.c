@@ -8,6 +8,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	size_t i;
+	size_t j;
 
 	if (*needle == '\0')
 	{
@@ -16,10 +17,12 @@ char *_strstr(char *haystack, char *needle)
 
 	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
-
-		if (*(haystack + i) == *(needle + 0))
+		for (j = 0; *(needle + j) != '\0' && haystack[i + j] == needle [j]; j++)
 		{
-			return (haystack + i);
+			if (*(haystack + i) == *(needle + 0))
+			{
+				return (haystack + i);
+			}
 		}
 	} return (NULL);
 }
