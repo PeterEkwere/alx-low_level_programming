@@ -1,4 +1,5 @@
-#include "main.h"
+#include "stdio.h"
+#include "stdlib.h"
 /**
  * main - prints a number 1 - 100 if multiple of 3 print fizz
  * if multiple of 5 print buzz
@@ -29,7 +30,9 @@ int main(void)
 			printf("%d ", i);
 		}
 		if (i == 100)
+		{
 			continue;
+		}
 		printf(" ");
 	} _putchar('\n');
 	return (0);
