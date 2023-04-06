@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  * main - prints a number 1 - 100 if multiple of 3 print fizz
  * if multiple of 5 print buzz
@@ -13,22 +12,25 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if ((i % 3) == 0 && (i % 5) == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
-		else if (i % 5 == 0)
+		else if ((i % 5) == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
-		else if (i % 3 == 0)
+		else if ((i % 3) == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else
 		{
 			printf("%d ", i);
 		}
-	} putchar('\n');
+		if (i == 100)
+			continue;
+		printf(" ");
+	} _putchar('\n');
 	return (0);
 }
