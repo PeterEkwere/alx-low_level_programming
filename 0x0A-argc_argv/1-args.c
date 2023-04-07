@@ -6,10 +6,10 @@
  * @argc:is the number of arguments passed
  * Return: always 0
  */
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argv != NULL)
 	{
-		printf("%d\n",argc);
+		printf("%d\n", argc);
 	} return (0);
 }
