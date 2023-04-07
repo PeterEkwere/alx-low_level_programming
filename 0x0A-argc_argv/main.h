@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <unistd.h>
 
 int is_palindrome(char *s);
 int _sqrt_recursion(int n);
