@@ -8,28 +8,39 @@
  * Return: a integer
  */
 int helper_palindrome(char *s, int start, int end);
-
+int len(char *s);
 int is_palindrome(char *s)
 {
-	int len = 0;
 	int i = 0;
-
-	while (s[len] != '\0')
-	{
-		len++;
-	}
-
-	if ((len == 0) || (len == 1))
+	int length = len(s);
+	if ((length == 0) || (length == 1))
 	{
 		return (1);
 	}
-	else if (s[i] != s[len - 1])
+	else if (s[i] != s[length - 1])
 	{
 		return (0);
 	}
 	else
 	{
-		return (helper_palindrome(s, i, len - 1));
+		return (helper_palindrome(s, i, length - 1));
+	}
+}
+/**
+ * len - gets the length of a string
+ * @s: is a pointer to a string
+ * Return: an integer
+ */
+int len(char *s)
+{
+	int i = 0;
+	if (*(s + i) == '\0')
+	{
+		return (0);
+	}
+	else
+	{
+		return (1 + len(s + 1));
 	}
 }
 /**
