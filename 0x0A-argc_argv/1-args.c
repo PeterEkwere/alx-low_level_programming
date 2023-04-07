@@ -1,5 +1,6 @@
 #include "main.h"
-#include "stdio.h"
+#include <stdio.h>
+#include <string.h>
 /**
  * main - entry point
  * @argv:is the argument passed
@@ -8,8 +9,16 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argv != NULL)
+	int num = argc - 1;
+	int i = 0;
+	while (i < argc)
 	{
-		printf("%d\n", argc);
-	} return (0);
+		if (strstr(argv[i],","))
+		{
+			num++;
+		}
+		i++;
+	}
+	printf("%d\n", num);
+	return (0);
 }
