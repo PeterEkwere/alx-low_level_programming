@@ -11,9 +11,10 @@ int main(int argc, char *argv[])
 {
 	int num = argc - 1;
 	int i = 0;
+
 	while (i < argc)
 	{
-		if (strstr(argv[i],","))
+		if (strstr(argv[i], ","))
 		{
 			num++;
 		}
