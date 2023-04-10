@@ -1,0 +1,18 @@
+!<arch>
+home.c/         0           0     0     644     57        `
+#include "main.h"
+
+
+int main(void)
+{
+	printf("hello");
+}
+
+main.c/         0           0     0     644     148       `
+#include "main.h"
+
+int main(void)
+{
+    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+    return (0);
+}
