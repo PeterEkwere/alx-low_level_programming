@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+char *_strdup(char *str);
 char *create_array(unsigned int size,char c);
 int is_palindrome(char *s);
 int _sqrt_recursion(int n);
