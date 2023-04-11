@@ -7,15 +7,14 @@
  */
 char *_strdup(char *str)
 {
-	if (str == NULL)
-        {
-                return (NULL);
-        }
-
 	int i = 0;
 	int j;
 	char *a;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	while (str[i] != '\0')
 	{
 		i++;
