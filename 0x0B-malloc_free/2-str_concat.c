@@ -10,16 +10,17 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	if (s1 == NULL || s2 == NULL)
-	{
-		return (NULL);
-	}
 
 	int i = 0;
 	int j = 0;
 	int h = 0;
 	int k = 0;
 	char *a;
+
+	if (s1 == NULL || s2 == NULL)
+	{
+		return (NULL);
+	}
 
 	while (s1[i] != '\0')
 	{
