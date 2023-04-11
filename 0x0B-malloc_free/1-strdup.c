@@ -16,11 +16,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	if (i < 1)
-	{
-		return (NULL);
-	}
-	else if (str == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
