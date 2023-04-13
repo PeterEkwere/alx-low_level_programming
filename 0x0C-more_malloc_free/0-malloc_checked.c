@@ -7,7 +7,15 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *p = malloc(sizeof(unsigned int) * b);
+	void *p;
+	unsigned int max = ~0;
+
+	if (b <= 0 || b > max / sizeof(unsigned int))
+	{
+		exit(98);
+	}
+
+	p = malloc(sizeof(unsigned int) * b);
 
 	if (p == NULL)
 	{
