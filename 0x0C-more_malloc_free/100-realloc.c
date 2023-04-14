@@ -13,14 +13,19 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	void *nptr = malloc(new_size);
 	int range, index;
 
+	if (old_size == 0 && ptr != NULL)
+	{
+		free(ptr);
+		return (NULL);
+	}
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
-
 	if (ptr == NULL)
 	{
+		free(ptr);
 		return (nptr);
 	}
 	if (nptr == NULL)
