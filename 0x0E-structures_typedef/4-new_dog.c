@@ -1,6 +1,30 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
+ * _strncpy - Copies at most an inputted number
+ *            of bytes from string src into dest.
+ * @dest: The buffer storing the string copy.
+ * @src: The source string.
+ * @n: The maximum number of bytes to copied from src.
+ *
+ * Return: A pointer to the resulting string dest.
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	int index = 0, src_len = 0;
+
+	while (src[index++])
+		src_len++;
+
+	for (index = 0; src[index] && index < n; index++)
+		dest[index] = src[index];
+
+	for (index = src_len; index < n; index++)
+		dest[index] = '\0';
+
+	return (dest);
+}
+/**
  * new_dog - is a function that initializes a variable
  * @name: is a pointer to a char array
  * @age: is an integer value
@@ -31,9 +55,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		exit(0);
 	}
-	(*d).name = name;
+	_strncpy((*d).name, name, i + 1);
+	_strncpy((*d).owner, owner, j + 1);
 	(*d).age = age;
-	(*d).owner = owner;
 
 	return (d);
 }
