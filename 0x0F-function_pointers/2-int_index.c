@@ -28,7 +28,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		{
 			return (index);
 		}
-		else if (cmp(array[index] == 0))
+		else if (cmp(array[index]) == 0)
 		{
 			notFound++;
 		}
@@ -36,5 +36,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 	if (notFound >= 1)
 	{
 		return (-1);
-	} return (0);
+	} return (-1);
 }
