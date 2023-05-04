@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_int - is a function that converts 
+ * binary_to_uint - is a function that converts
  * a binary digit to unary digit
  *
  * @b: is a pointer to an array of char binary
