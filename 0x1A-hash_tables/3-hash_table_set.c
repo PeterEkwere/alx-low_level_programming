@@ -10,14 +10,25 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int hash_index = key_index((unsigned char *)key, MAX_SIZE);
+	unsigned long int hash_index = key_index((unsigned char *)key, ht->size);
 	hash_node_t *new_node = (hash_node_t *)malloc(sizeof(hash_node_t));
+	int i;
 
 	if (new_node == NULL)
 	{
 		printf("Malloc Error\n");
 		return (0);
 	}
+	for (i = hash_index; ht->array[i]; i++)
+	{
+		if (strcmp(ht->array[i]->key, key)== 0)
+		{
+			free(ht->array[i]->value);
+			ht->array[i]->value = strdup(value);
+			return (1);
+		}
+	}
+
 	new_node->key = malloc(strlen(key) + 1);
 	new_node->value = malloc(strlen(key) + 1);
 

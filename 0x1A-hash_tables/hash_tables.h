@@ -7,9 +7,6 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-/** POINTERS and MACROS**/
-#define MAX_SIZE 1024
-
 /**
  * struct hash_node_s - Node of a hash table
  *
