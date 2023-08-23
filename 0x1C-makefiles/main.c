@@ -1,10 +1,11 @@
-#include <stdio.h>
-#include "header.h"
+#include "m.h"
 /**
- * main - point of entry
- * Return: Void 
-*/
-void main()
+ * main - Entry point
+ *
+ * Return: Always 
+ */
+int main(void)
 {
-    school();
+	print_school();
+	return (EXIT_SUCCESS);
 }

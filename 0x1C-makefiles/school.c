@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include "header.h"
+#include "m.h"
 /**
- * main - point of entry
- * Return: Void 
-*/
+ * print_school
+ *
+ * Return: Nothing
+ */
 void school()
 {
     printf("j#0000000000000000000000000000000000000\n");
