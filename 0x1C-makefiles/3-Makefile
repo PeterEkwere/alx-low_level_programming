@@ -14,10 +14,10 @@ $(NAME): $(OBJ)
 	$(CC) -c -o $@ $<
 
 clean:
-    $(RM) *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-    $(RM) *.o
+	$(RM) *.o
 
 fclean: clean oclean
 
