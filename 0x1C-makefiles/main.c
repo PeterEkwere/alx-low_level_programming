@@ -2,9 +2,9 @@
 #include "header.h"
 /**
  * main - point of entry
- * Return: Void 
+ * Return:void
 */
-void main()
+void main(void)
 {
-    school();
+	school();
 }
