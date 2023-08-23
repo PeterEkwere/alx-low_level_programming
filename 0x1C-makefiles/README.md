@@ -1,0 +1,2 @@
+## Makefile Basics Tutorial
+``` Welcome to the Makefile Basics Tutorial! Makefiles are used to automate the build process of software projects. They define a set of rules to compile source code, manage dependencies, and execute various tasks.
